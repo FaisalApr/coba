@@ -1,0 +1,101 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.msi.cloneig.Register">
+    <ImageView
+        android:id="@+id/logoIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/ig_logo" />
+
+    <TextView
+        android:id="@+id/txtKet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIG"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up to see photos and videos from your friends"
+        android:textAlignment="center"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/txtKet"
+        />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_below="@id/email"
+        />
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/editTextNama"
+        />
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextUsername"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Daftar" />
+    <TextView
+        android:id="@+id/txtTerms"
+        android:layout_below="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:text="By Signing up, you agree to our Terms and Privacy Policy"
+        />
+
+    <TextView
+        android:id="@+id/txtReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMove"
+        android:layout_alignBottom="@+id/btnMove"
+        android:layout_alignStart="@+id/logoIG"
+        android:layout_marginStart="24dp"
+        android:text="Sudah Punya Akun ? "
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btnMove"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logoIG"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="11dp"
+        android:text="Klik disini"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="10dp" />
+
+</RelativeLayout>

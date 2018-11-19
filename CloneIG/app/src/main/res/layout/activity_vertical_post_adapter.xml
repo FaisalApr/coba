@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_margin="1dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/post_top_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profil_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="1dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/post_profil_name"
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:ems="15"
+            android:gravity="center_vertical"
+            android:text="Nama"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_main_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icondot" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/post_mid_lay"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/post_top_lay">
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/post_bot_lay"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/post_mid_lay"
+        android:layout_marginLeft="15dp">
+
+        <Button
+            android:id="@+id/btn_main_like"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/icon_love"
+            />
+
+        <Button
+            android:id="@+id/btn_main_comment"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/icon_comment"
+            />
+
+        <Button
+            android:id="@+id/btn_main_share"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/icon_forward"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/post_bot_lay"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp">
+
+    </LinearLayout>
+
+</RelativeLayout>

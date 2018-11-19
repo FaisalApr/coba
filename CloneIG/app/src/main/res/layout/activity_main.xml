@@ -1,0 +1,102 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.msi.cloneig.MainActivity"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/ig_logo" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+
+        android:hint="Nomor telepon, email, atau nama pengguna">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUser"
+        android:inputType="textPassword"
+        android:hint="Kata Sandi">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnMasuk"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPass"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk" />
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnMasuk"
+        android:text="Lupa detail informasi masuk anda ? Dapatkan bantuan unutk masuk"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ATAU"
+        android:textSize="25dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnFb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:drawableLeft="@drawable/fb_logo_new"
+        android:text="Masuk dengan facebook" />
+
+    <TextView
+        android:id="@+id/txtReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPindah"
+        android:layout_alignBottom="@+id/btnPindah"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginEnd="13dp"
+        android:text="Tidak Punya Akun ? "
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btnPindah"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logo"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="11dp"
+        android:text="Klik disini"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="10dp" />
+
+</RelativeLayout>

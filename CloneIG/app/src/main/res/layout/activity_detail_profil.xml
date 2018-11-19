@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.msi.cloneig.detailProfil"
+    android:background="@android:color/white"
+    >
+    <!--header-->
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffff">
+
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/TxtBismillah"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="asdasdasdasdasdas"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/igarchive" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/igmenu" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <!--profil-->
+        <LinearLayout
+            android:layout_below="@+id/topPanel"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="100dp"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            tools:ignore="NotSibling">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imagess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/poto"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:text="16"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:text="Postingan"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:text="500"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:text="Pengikut"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:text="200"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:text="yang diikuti"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <Button
+                                android:id="@+id/coba"
+                                android:text="Edit Profil"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    <!--tombol atas grid-->
+        <LinearLayout
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:src="@drawable/grid"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/list"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/closefriend"
+                    android:background="#fff"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tag"
+                    android:background="#fff"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <!--footer-->
+    <RelativeLayout
+
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background_border"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:id="@+id/btnHum"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_home" />
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_toRightOf="@+id/btnHum"
+            android:src="@drawable/icon_search"
+            android:id="@+id/btnSearch"/>
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_toRightOf="@+id/btnSearch"
+            android:src="@drawable/icon_tambah"
+            android:id="@+id/btnTambah"/>
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_toRightOf="@+id/btnTambah"
+            android:src="@drawable/icon_love"
+            android:id="@+id/btnLove"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_toRightOf="@+id/btnLove"
+            android:src="@drawable/icon_profil"
+            android:id="@+id/btnPro"/>
+    </RelativeLayout>
+
+    <!--gridview-->
+    <GridView
+        android:id="@+id/griedview"
+        android:layout_below="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        tools:ignore="NotSibling,UnknownId">
+
+    </GridView>
+
+</RelativeLayout>
